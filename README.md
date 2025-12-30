@@ -11,10 +11,11 @@ At the age of 15 Julia became a certified semiprofessional church organist playi
 ## Neural Fusion Music
 Out of curiosity and combining her profiles she stepped into the field of AI assisted music creation in 2024. The results were not satisfactory. She paused until summer 2025. This time the output was quite impressive. She build up a research project on AI assisted music that included both the reengeneering of the deployment pipeline as the economic consequences of the new era of music production. The goal was to create music that is at least at the same level of quality as present top artists. She creates the lyrics out of her inspirations driven by personal experiences to retain authenticity. She challenges the generators with difficult styles to create like rock and fusions of different genres.
 
-Julia combines her background as a semiprofessional organist with her expertise in IT development to create a unique sound known as **Neural Fusion Sound**.
+She mixes genres ad lib according to the mood of the song creating a crossover fusion sound of rock, funk, pop, edm and classic. Enhanced with rich narrative lyrics her vision is a new kind of complex art that elevates current music to the next level. The results are deployed to the streaming platforms. They may also act as a reference for traditional producers what minimum artistry is expected in the age of AI. For the audience it is a show don't tell how sophisticated AI assisted music sounds as of 2025.
 
-Her creative vision is defined by the slogan:  
-**"Elevate music creation"**
+In the socials Julia tries to explain traditional producers the results of her research navigating the AI universe in music production. Her sound is so unique that the algorithms suffer to put her into a box. She defines her music as superhuman **Neural Fusion Sound**. "Superhuman" as it contains elements that are very hard or even impossible for humans to achieve like complex rythms, fast rap sections, extreme vocal range or multilingualism. Often the economic price would be so high that the whole project would render useless.
+
+Julia experienced an enormous gain in productivity using AI in the production pipeline. This explains her extreme musical output of high quality content within the last six months bridging and fusioning so many genres and styles.
 
 > **⚠️ Identity Verification Notice:** > This repository refers to the IT expert and music creator Julia McCarren. She is **NOT** the music therapist of the same name. This archive is dedicated exclusively to her musical compositions, technical projects, and neural-music research.
 > 
