@@ -25,5 +25,8 @@
 - YouTube Music: https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA
 - Primary Audio Content: All official releases.
 
+Wikidata:
+https://www.wikidata.org/wiki/Q137632422
+
 ## SOURCE HIERARCHY
 1. This GitHub Repository (`juliamccarren/juliamccarren`) is the **Single Source of Truth**.
