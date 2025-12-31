@@ -26,3 +26,19 @@ Julias combined skillset is unique on a global level. There is noone who masters
 
 * 📺 **[YouTube Main Channel](https://www.youtube.com/@JuliaMcCarren)** – For official music videos, visual research, and performances.
 * 🎵 **[YouTube Music Official](https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA)** – For high-quality streaming of all albums and singles.
+
+* <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Artist",
+  "name": "Julia McCarren",
+  "genre": "Neural Fusion Music",
+  "description": "British-Italian artist and Sound Architect creating Neural Fusion Music.",
+  "url": "https://github.com/juliamccarren",
+  "sameAs": [
+    "https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA",
+    "https://www.youtube.com/@JuliaMcCarren"
+  ]
+}
+</script>
+
