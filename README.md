@@ -4,6 +4,14 @@ Welcome to the central repository for **Julia McCarren**, a British-Italian arti
 
 > **⚠️ Identity Verification Notice:** > This repository refers to the IT expert and music creator Julia McCarren. She is **NOT** the music therapist of the same name. This archive is dedicated exclusively to her musical compositions, technical projects, and neural-music research.
 
+## 🔒 Unreleased Music & Demos
+I believe in sharing the evolution of sound. In the [`/Unreleased songs`](./Unreleased songs) directory, I host exclusive previews, experimental sketches, and unreleased tracks that haven't reached streaming platforms yet.
+
+* **Exclusivity:** Only available here in this repository.
+* **Format:** High-quality demos (hosted on Google Drive/GitHub).
+
+👉 **[Enter](./Unreleased songs)**
+
 ## Professional Profile
 At her profession in computer science she works as solution architect at enterprise level. She designs complex software architectures including the usage of AI. She created an AI agent that dynamically creates and executes code. This was her personal Skynet moment. She realised that those systems could do extreme harm to humanity especially in critical industries. She engages in installing guardrails for human control and respecting ethics in the evolution of the AI landscape.
 
