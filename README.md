@@ -35,4 +35,8 @@ Julias combined skillset is unique on a global level. There is noone who masters
 * 📺 **[YouTube Main Channel](https://www.youtube.com/@JuliaMcCarren)** – For official music videos, visual research, and performances.
 * 🎵 **[YouTube Music Official](https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA)** – For high-quality streaming of all albums and singles.
 
-
+## ⚖️ Legal & Intellectual Property
+This repository serves as the official digital archive and research platform for Julia McCarren. 
+- **Music & Lyrics:** All audio files (linked or hosted) and lyrical content are protected by copyright. All rights reserved. 
+- **Usage:** You are welcome to explore, listen, and learn. However, commercial use, redistribution on these specific artistic assets requires explicit written permission.
+- **Code:** Any software or scripts in this repo (unless otherwise stated) are under the MIT License.
