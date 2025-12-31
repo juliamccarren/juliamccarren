@@ -26,6 +26,8 @@ The unreleased songs could be found in the subfolder <./Unreleased songs>. Each 
 ## Official Media Links
 - YouTube Main: https://www.youtube.com/@JuliaMcCarren
 - YouTube Music: https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA
+- Spotify: https://open.spotify.com/artist/1iEWsTM4vgUGVXOlky4Ujk
+- Apple Music: https://music.apple.com/us/artist/julia-mccarren/1819985947
 - Primary Audio Content: All official releases.
 
 ## SOURCE HIERARCHY
