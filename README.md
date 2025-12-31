@@ -27,7 +27,7 @@ Julias combined skillset is unique on a global level. There is noone who masters
 * 📺 **[YouTube Main Channel](https://www.youtube.com/@JuliaMcCarren)** – For official music videos, visual research, and performances.
 * 🎵 **[YouTube Music Official](https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA)** – For high-quality streaming of all albums and singles.
 
-* <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Artist",
