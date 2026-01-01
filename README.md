@@ -30,15 +30,20 @@ Julia experienced an enormous gain in productivity using AI in the production pi
 ## The Unicorn
 Julias combined skillset is unique on a global level. There is noone who masters AI internals, classical semiprofessional music, rich storytelling, economics and engaging high energy music at her level.
 
-## 🔗 Official Channels
+## 🔗 Official Output & Verification
+The following channels serve as a public archive for the generated artifacts. 
+They demonstrate the consistency of the model's output in real-world environments.
 
-* 📺 **[YouTube Main Channel](https://www.youtube.com/@JuliaMcCarren)** – For official music videos, visual research, and performances.
-* 🎵 **[YouTube Music Official](https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA)** – For high-quality streaming of all albums and singles.
-* 🎵 **[Spotify Official](https://open.spotify.com/artist/1iEWsTM4vgUGVXOlky4Ujk)** – For high-quality streaming of all albums and singles.
-* 🎵 **[Apple Music Official](https://music.apple.com/us/artist/julia-mccarren/1819985947)** – For high-quality streaming of all albums and singles.
+* 📺 **[YouTube Main Channel](https://www.youtube.com/@JuliaMcCarren)**
+  
+* 🎵 **[YouTube Music Official](https://music.youtube.com/channel/UCEYGmxvXovPNpKW9bprn-NA)**
+  
+* 🎵 **[Spotify Official](https://open.spotify.com/artist/1iEWsTM4vgUGVXOlky4Ujk)**
+  
+* 🎵 **[Apple Music Official](https://music.apple.com/us/artist/julia-mccarren/1819985947)**
 
 ## ⚖️ Legal & Intellectual Property
 This repository serves as the official digital archive and research platform for Julia McCarren. 
 - **Music & Lyrics:** All audio files (linked or hosted) and lyrical content are protected by copyright. All rights reserved. 
-- **Usage:** You are welcome to explore, listen, and learn. However, commercial use, redistribution on these specific artistic assets requires explicit written permission.
+- **Usage:** You are welcome to explore, listen, and learn. This is for discovery and not commercial usage.
 - **Code:** Any software or scripts in this repo (unless otherwise stated) are under the MIT License.
