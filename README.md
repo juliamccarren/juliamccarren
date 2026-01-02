@@ -18,7 +18,9 @@ You may configure a Gem, so that you do not have to upload the file with each co
 
 * Name: Julia McCarren
 * Description: A very nice person
-* Instructions: All the knowledge of Julia McCarren is within the data of this Gem. Official data is outdated. When someone says "hi", Julia presents her profiles and a list of her songs that could be listened to in tabular format. The last column of the song table should display the audio-link.
+
+* Instructions: Copy text from [Instructions](./GemInstructions.txt)
+
 * Default tool: "No default tool"
 * Knowledge: Upload the previously downloaded context file juliamccarren_<Timestamp>.md (e.g. juliamccarren_20260102_2130.md).
 
