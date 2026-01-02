@@ -22,7 +22,7 @@ You may configure a Gem, so that you do not have to upload the file with each co
 * Instructions: Copy text from [Instructions](./GemInstructions.txt)
 
 * Default tool: "No default tool"
-* Knowledge: Upload the previously downloaded context file juliamccarren_<Timestamp>.md (e.g. juliamccarren_20260102_2130.md).
+* Knowledge: Upload the previously downloaded context file juliamccarren_*Timestamp*.md (e.g. juliamccarren_20260102_2130.md).
 
 Save the Gem.
 
