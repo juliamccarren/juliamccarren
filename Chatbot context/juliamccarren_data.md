@@ -855,6 +855,161 @@ Fine now.
 #### 🎧 Audio & Media
 * **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/18COou8_7SPccCZSXKP6346AE8TlU7m_3/view?usp=drive_link)
 
+### I Hate You
+Status: Unreleased
+
+#### 📖 Story
+At first your boyfriend cares for you. But when time passes by, he starts neglecting you, taking your presence for granted. This is not what I respect a relationship to be. The opposite of love is not hate. It is neglection.
+So when I sing "I hate you" there is a rest of love left.
+
+#### 🎶Lyrics
+
+[Verse 1]
+I’m talking to the back of your head again
+While you’re staring at the screen, counting digital friends
+I poured my heart out, laid it on the floor
+You didn’t even look up, just pointed at the door
+You say I’m "too much," say I’m "acting wild"
+Then you pat me on the shoulder like a bitter child
+Every word is a needle, every look is a blade
+Watching all the promises we ever made just fade.
+
+[Pre-Chorus]
+And I’m tired of the quiet, tired of the "fine"
+Tired of you acting like your soul is worth more than mine
+The pressure’s building up, the glass is gonna break
+I’ve taken every single hit that I can take.
+
+[Chorus]
+So I’m screaming at the walls, I’m screaming at the ghost
+Of the man I thought I loved, the one I needed most!
+You stripped away my pride and you left me black and blue
+Now I’m standing in the wreckage and I’m shouting it at you:
+I HATE YOU!
+Yeah, I said it, and I mean it tonight
+I HATE YOU!
+For every time you told me I wasn't right.
+
+[Verse 2]
+You walk into the kitchen, don’t even say hello
+Like I’m just a piece of furniture you happen to know
+You laugh at my dreams, call my passions "small"
+While you’re standing on a pedestal that’s ten feet tall
+But the wood is rotting out, the base is getting thin
+And I’m done being the place where you dump all your sin.
+
+[Bridge]
+It’s not a quiet flame, it’s a forest fire
+I’m burning every bridge, I’m the funeral pyre
+You thought I’d stay silent, thought I’d stay small
+But I’m the loudest voice inside these four walls!
+
+[Chorus]
+So I’m screaming at the walls, I’m screaming at the ghost
+Of the man I thought I loved, the one I needed most!
+You stripped away my pride and you left me black and blue
+Now I’m standing in the wreckage and I’m shouting it at you:
+I HATE YOU!
+Yeah, I said it, and I mean it tonight
+I HATE YOU!
+For every time you told me I wasn't right.
+
+[Outro]
+[Spoken]
+I hate you.
+God, I hate you.
+Don't look at me.
+Just go.
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1DvyCD-Uh9w3xGHhoH1nM7ES9OOSoJHBA/view?usp=drive_link)
+
+### Just a Vibe
+Status: Unreleased
+
+#### 📖 Story
+This song belongs to the Good Enough series of ironic songs with flat lyrics and low effort melody that mimic the flat radio trash of today.
+
+#### 🎶Lyrics
+
+[Verse 1]
+The wall is off-white.
+The rug is grey wool.
+The lamp is frosted glass.
+The door is particle board.
+The chair is comfortable.
+It is moderately warm.
+
+[Pre-Chorus]
+I feel things now.
+They are not specific.
+They are not strong things.
+They are just impressions.
+The atmosphere is here.
+The feeling is general.
+
+[Chorus]
+Oh, it’s just a vibe.
+Yeah, I think I like it.
+It's an ambient noise.
+It doesn't hurt anyone.
+We can stay here now.
+We can do nothing much.
+It’s not bad at all.
+It is perfectly neutral.
+
+[Verse 2]
+The sky is pale blue.
+The road is smooth asphalt.
+The grass is cut short.
+The mailbox is metal grey.
+The wind is gentle.
+The speed is moderate.
+
+[Pre-Chorus]
+I feel things now.
+They are not specific.
+They are not strong things.
+They are just impressions.
+The atmosphere is here.
+The feeling is general.
+
+[Chorus]
+Oh, it’s just a vibe.
+Yeah, I think I like it.
+It's an ambient noise.
+It doesn't hurt anyone.
+We can stay here now.
+We can do nothing much.
+It’s not bad at all.
+It is perfectly neutral.
+
+[Bridge]
+No need for drama.
+No need for high stakes.
+The world is fine.
+We are observing things.
+It is easy like this.
+It is safe right here.
+
+[Chorus]
+Oh, it’s **just a vibe**.
+Yeah, I think I like it.
+It's an ambient noise.
+It doesn't hurt anyone.
+We can stay here now.
+We can do nothing much.
+It’s not bad at all.
+It is perfectly neutral.
+
+[Outro]
+Neutral.
+A vibe.
+It's fine.
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/15ROtFSq_mE4jMHJWi3azox8-jb_gbwEj/view?usp=drive_link)
+
 
 
 
@@ -871,5 +1026,4 @@ Status: Unreleased
 * **Listen to the Song (High Quality):** [Stream/Download via Google Drive]()
 
 
-#### 🎧 Audio & Media
-* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1-eBZdp7-KiC1tvZ5OfAkaWmbJpg8_0g5/view?usp=drivesdk)
+
