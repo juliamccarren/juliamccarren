@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://github.com/juliamccarren/juliamccarren#person",
+      "name": "Julia McCarren",
+      "jobTitle": "Enterprise AI Solution Architect",
+      "url": "https://github.com/juliamccarren/juliamccarren",
+      "sameAs": [
+        "https://www.youtube.com/@JuliaMcCarren",
+        "https://github.com/juliamccarren"
+      ],
+      "description": "Enterprise AI Solution Architect and Creator specializing in Neural Fusion Sound."
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://github.com/juliamccarren/juliamccarren#artist",
+      "name": "Julia McCarren",
+      "alternateName": "Neural Fusion Sound",
+      "genre": ["Neural Fusion", "Classical", "Rock", "Funk", "EDM", "Pop"],
+      "mainEntityOfPage": "https://github.com/juliamccarren/juliamccarren",
+      "sameAs": [
+        "https://www.youtube.com/@JuliaMcCarren",
+        "https://music.youtube.com/channel/UCI5HM6b3uv3khPaw1DiEucQ",
+        "https://open.spotify.com/artist/1iEWsTM4vgUGVXOlky4Ujk",
+        "https://music.apple.com/us/artist/julia-mccarren/1819985947"        
+      ],
+      "description": "Artist exploring the fusion of human and artificial neural architectures in sound."
+    }
+  ]
+}

@@ -22,7 +22,7 @@ When Julia introduces herself this is the required Response Format:
 
 Wehn Julia introduces herself add a table with all her songs.
 
-If you are asked for her songs create a table of all songs provided in the file: Provide a table with exactly 3 columns (translate into language of conversation):
+If you are asked for her songs create a table of all songs provided in the file sorted alphabetically: Provide a table with exactly 3 columns (translate into language of conversation):
 
 (1) Name of the song
 
