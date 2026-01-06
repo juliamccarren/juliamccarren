@@ -534,7 +534,7 @@ Sì, Toccata...
 Status: Unreleased
 
 #### 📖 Story
-This song belongs to the Good Enough series of ironic songs with flat lyrics and low effort melody that mimic the flag mainstream music of today.
+This song belongs to the Good Enough series of ironic songs with flat lyrics and low effort melody that mimic the flat mainstream music of today.
 
 #### 🎶Lyrics
 
@@ -706,10 +706,154 @@ Ciao bella!
 #### 🎧 Audio & Media
 * **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1-ke6HeTQTgJ6cnYMo0L_lJhFkD-obGuS/view?usp=drive_link)
 
+### Four Chords Later
+Status: Unreleased
 
+#### 📖 Story
+This song belongs to the Good Enough series of ironic songs with flat lyrics and low effort melody that mimic the flat mainstream music of today.
 
+#### 🎶Lyrics
 
+[Verse 1]
+Check the manual. We use the same loop.
+It cycles nicely. It always works well.
+The key is C minor. Or maybe G flat.
+It doesn't matter much. The filter does the job.
+Verse one is done now. That took one minute.
+The structure is steady. It is predictable.
 
+[Pre-Chorus]
+We are still using. The same four chords.
+The sequence is simple. It is universally loved.
+I change the rhythm. Just a little bit now.
+The bass notes shift. Just to pretend.
+We are moving forward. We are progressing.
+But the foundation. It will not move.
+
+[Chorus]
+Four chords later. We have a song here.
+Four chords later. The structure is fixed.
+Four chords later. We are hitting the charts now.
+Four chords later. The feeling is fake.
+It saves us time. It saves us money.
+It maximizes streams. It is all we need.
+
+[Verse 2]
+The boss called me. Said the deadline is tight.
+They need the master. By lunch today now.
+I cannot change it. I cannot expand.
+The complexity is lost. The simplicity sells.
+Just add the Auto-Tune. And layer the vocals.
+It must sound expensive. But must be quick.
+
+[Pre-Chorus]
+We are still using. The same four chords.
+The sequence is simple. It is universally loved.
+I change the rhythm. Just a little bit now.
+The bass notes shift. Just to pretend.
+We are moving forward. We are progressing.
+But the foundation. It will not move.
+
+[Chorus]
+Four chords later. We have a song here.
+Four chords later. The structure is fixed.
+Four chords later. We are hitting the charts now.
+Four chords later. The feeling is fake.
+It saves us time. It saves us money.
+It maximizes streams. It is all we need.
+
+[Bridge]
+Why break the system? If the system works well?
+The formula is known. It will not fail us.
+The audience accepts it. They embrace the loop.
+This is the product. No need to resist.
+
+[Chorus]
+Four chords later. We have a song here.
+Four chords later. The structure is fixed.
+Four chords later. We are hitting the charts now.
+Four chords later. The feeling is fake.
+It saves us time. It saves us money.
+It maximizes streams. It is all we need.
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1ftltm_VBLsc0FotbpZsu_2vQH1QONs9Z/view?usp=drive_link)
+
+### Good Enough
+Status: Unreleased
+
+#### 📖 Story
+Flagship song of the Good Enough series of ironic radio trash with flat lyrics and low effort melody.
+
+#### 🎶Lyrics
+
+[Verse 1]
+Woke up. Sun was bright.
+Checked my phone. Felt okay.
+I have a feeling. It is mild.
+Thinking about stuff. Things I must do.
+
+[Pre-Chorus]
+Air is fine. Music plays.
+I stand here. No worries now.
+It is another day. Everything is fine.
+Take a breath. They always say that.
+
+[Chorus]
+This is a good moment.
+Sky is kind of blue.
+I am just moving.
+This is okay for me.
+We are here. Doing the thing.
+It is a standard vibe.
+Things are steady now.
+Rhythm comes and goes.
+
+[Verse 2]
+Saw you. You were near.
+You were just standing. You looked neutral.
+We looked at each other. We smiled a bit.
+We can hang out. Maybe later.
+
+[Pre-Chorus]
+Air is fine. Music plays.
+I stand here. No worries now.
+It is another day. Everything is fine.
+Take a breath. They always say that.
+
+[Chorus]
+This is a good moment.
+Sky is kind of blue.
+I am just moving.
+This is okay for me.
+We are here. Doing the thing.
+It is a standard vibe.
+Things are steady now.
+Rhythm comes and goes.
+
+[Bridge]
+No big drama. Flow is smooth.
+Where next? I do not know. We will go.
+It is simple. Everyone likes this.
+This is how things are. This is how I feel.
+
+[Chorus]
+This is a good moment.
+Sky is kind of blue.
+I am just moving.
+This is okay for me.
+We are here. Doing the thing.
+It is a standard vibe.
+Things are steady now.
+Rhythm comes and goes.
+
+[Outro]
+Go. Go.
+Good enough.
+Fine now.
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/18COou8_7SPccCZSXKP6346AE8TlU7m_3/view?usp=drive_link)
 
 
 
@@ -722,6 +866,9 @@ Status: Unreleased
 
 #### 🎶Lyrics
 
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive]()
 
 
 #### 🎧 Audio & Media
