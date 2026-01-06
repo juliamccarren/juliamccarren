@@ -10,6 +10,7 @@ As an AI professional, Julia leverages AI-chatbots as her primary user interface
 Download the latest configuration files to your local device (Right-click and select "Save link as"):
 
 **[Download Knowlege File](<./Chatbot context/juliamccarren_knowledge_20260106_1130.md>)**
+
 **[Download Instructions File](<./Chatbot context/juliamccarren_instructions.txt>)**
 
 **Note on Versioning:** File timestamps follow the YYYYMMDD_hhmm format. Always utilize the file with the highest numerical value for the most current information.
@@ -52,4 +53,4 @@ To engage with Julia, select the Julia McCarren Gem from your list rather than s
 
 * **Direct Access**: Simply say "Hi" in yoor favourite language to begin.
 
-* **Exclusive Media**: The AI is equipped with direct links to high-quality, unreleased audio files for Julia's entire discography. If you require a link to a specific track, simply ask the chatbot during the session.
+* **Exclusive Media**: The AI is equipped with direct links to high-quality, even unreleased audio files for Julia's discography. If you require a link to a specific track, simply ask the chatbot during the session.
