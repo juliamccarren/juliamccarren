@@ -368,7 +368,7 @@ Untamed.
 * **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1YoIzOoL_oBvmMe9C1TCYXaNrCdYBYOcw/view?usp=drive_link)
 
 ### Frozen Heart
-Status: Unreleased
+Status: Released
 
 #### 📖 Story
 We went to an exhibition of ice carving artistry. It was so cold but so nice. 
@@ -526,6 +526,203 @@ Sei Toccata!
 
 [Outro]
 Sì, Toccata...
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1-eBZdp7-KiC1tvZ5OfAkaWmbJpg8_0g5/view?usp=drivesdk)
+
+### Disposable
+Status: Unreleased
+
+#### 📖 Story
+This song belongs to the Good Enough series of ironic songs with flat lyrics and low effort melody that mimic the flag mainstream music of today.
+
+#### 🎶Lyrics
+
+[Verse 1]
+Lights are low.
+Just a guitar now.
+This is the part.
+Where we try to be real.
+We had a fight.
+Or maybe we didn't.
+It doesn't matter much.
+It's just the format.
+
+[Pre-Chorus]
+They said make it easy.
+They said make it simple.
+The melody is slow.
+The harmony is sad.
+It feels more honest.
+When there is no bass.
+
+[Chorus]
+Oh-oh-oh. I need you close.
+Yeah-yeah-yeah. Let's take it higher.
+I need the chorus. It needs to work now.
+This is the product. I call it trash.
+(I call it trash).
+It is disposable. No turning back.
+
+[Verse 2]
+Look at the numbers.
+The money is rising.
+The formula works.
+Even when it is quiet.
+I'm singing softer.
+To sound more vulnerable.
+The emotion is faked.
+But the reverb is gone.
+
+[Pre-Chorus]
+They said make it easy.
+They said make it simple.
+The melody is slow.
+The harmony is sad.
+It feels more honest.
+When there is no bass.
+
+[Chorus]
+Oh-oh-oh. I need you close.
+Yeah-yeah-yeah. Let's take it higher.
+I need the chorus. It needs to work now.
+This is the product. I call it trash.
+(I call it trash).
+It is disposable. No turning back.
+
+[Bridge]
+No big drama.
+Just a single tear drop.
+This is the part.
+Where we feel something small.
+Now it is over.
+The moment is gone.
+
+[Outro]
+Disposable.
+It was only for show.
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1rlWYGx23KYz5ioCcJFfqzy-lM6ayonUf/view?usp=drive_link)
+
+### Dynamite
+Status: Unreleased
+
+#### 📖 Story
+Some women are so self-conscious that they attract attention in the moment the enter the room. This is about this energy, being vital and non-conformistic. 
+
+#### 🎶Lyrics
+
+[Intro]
+Yeah...
+Watch out now.
+She’s entering the room.
+Keep it tight!
+
+[Verse 1]
+She don't walk, she glides on the pavement
+A neon silhouette in the basement
+Got a velvet coat and a gaze like a laser
+Looking for trouble? Well, she’s the flavor.
+Bartender shaking, spilling the gin
+She gives a little wink and the chaos begins
+Don’t ask for her number, don’t ask for her name
+You’re just a moth flying into the flame!
+
+[Pre-Chorus]
+She’s got the rhythm (Uh!)
+Locked in her bones
+She’s got a heart made of rolling stones!
+
+[Chorus]
+She’s a wild one, mamma mia!
+Electric shock, pure hysteria
+Signorina Dynamite, ready to blow
+Spinning round like a disco globe!
+She’s a wild one, can’t you see?
+A catastrophe in a minor key
+Don’t try to tame her, don’t try to fight
+You’re gonna dance with the Dynamite 
+[Spoken]
+tonight!
+
+[Verse 2]
+She eats danger for breakfast, honey, no lie
+She’ll steal your car and wave goodbye
+Zero to sixty in a blink of an eye
+She’s the funky queen of the Gemini.
+Some say she’s crazy, some say she’s free
+I say she’s exactly who she wants to be
+So clear the floor, give her room to breathe
+Before she brings this whole joint to its knees!
+
+[Chorus]
+She’s a wild one, mamma mia!
+Electric shock, pure hysteria
+Signorina Dynamite, ready to blow
+Spinning round like a disco globe!
+She’s a wild one, can’t you see?
+A catastrophe in a minor key
+Don’t try to tame her, don’t try to fight
+You’re gonna dance with the Dynamite 
+[Spoken]
+tonight!
+
+[Bridge]
+Ascolta bene, non fare il pazzo
+Questa ragazza ti fa il mazzo!
+Cammina svelta, tacchi a spillo
+Ti mangia vivo come un coccodrillo.
+È fuoco puro, brucia la pista
+La donna più bella sulla tua lista.
+Non si ferma mai, no stop, vai!
+Sei pronto a perdere? Dimmi, lo sai?
+Roma, Milano, Napoli funk
+Lei porta il groove come uno slam dunk!
+Lasciala andare, è pericolosa
+Bella, cattiva, e velenosa!
+
+[Guitar Solo]
+
+[Chorus]
+She’s a wild one, mamma mia!
+Electric shock, pure hysteria
+Signorina Dynamite, ready to blow
+Spinning round like a disco globe!
+She’s a wild one, can’t you see?
+A catastrophe in a minor key
+Don’t try to tame her, don’t try to fight
+You’re gonna dance with the Dynamite 
+[Spoken]
+tonight!
+
+[Outro]
+Dynamite! (Huh!)
+Che ragazza!
+Don't touch the fuse...
+She's gonna blow!
+Ciao bella!
+
+#### 🎧 Audio & Media
+* **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1-ke6HeTQTgJ6cnYMo0L_lJhFkD-obGuS/view?usp=drive_link)
+
+
+
+
+
+
+
+
+
+### Song title
+Status: Unreleased
+
+#### 📖 Story
+
+
+#### 🎶Lyrics
+
+
 
 #### 🎧 Audio & Media
 * **Listen to the Song (High Quality):** [Stream/Download via Google Drive](https://drive.google.com/file/d/1-eBZdp7-KiC1tvZ5OfAkaWmbJpg8_0g5/view?usp=drivesdk)
