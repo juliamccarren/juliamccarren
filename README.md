@@ -19,7 +19,7 @@ Download the latest configuration files to your local device (Right-click and se
 
 For any standard AI session, you must manually provide context to initialize the persona:
 
-1. Attach the Data File to your initial prompt.
+1. Attach the Knowledge File to your initial prompt.
 
 2. Paste the full text of the Instructions File into the prompt.
 
@@ -41,7 +41,7 @@ To create a persistent interface without repeated uploads, configure a custom Ge
 
     * Instructions: Copy and paste the text from the downloaded Instructions File.
 
-    * Knowledge: Upload the latest Data File (e.g., juliamccarren_20260106_1130.md).
+    * Knowledge: Upload the latest Knowledge File.
 
 4. Save the Gem.
 
