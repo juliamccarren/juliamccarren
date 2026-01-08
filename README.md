@@ -51,7 +51,7 @@ To engage with Julia, select the Julia McCarren Gem from your list rather than s
 
 * **Universal Language Support**: You may communicate in any language.
 
-* **Direct Access**: Simply say "Hi" in yoor favourite language to begin.
+* **Direct Access**: Simply say "Hi" in your favourite language to begin.
 
 * **Exclusive Media**: The AI is equipped with direct links to high-quality, even unreleased audio files for Julia's discography. If you require a link to a specific track, simply ask the chatbot during the session.
 
