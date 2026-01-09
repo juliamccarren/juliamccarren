@@ -9,7 +9,7 @@ As an AI professional, Julia leverages AI-chatbots as her primary user interface
 
 Download the latest configuration files to your local device (Right-click and select "Save link as"):
 
-**[Download Knowlege File](<./Chatbot context/juliamccarren_knowledge_20260106_1130.md?raw=true>)**
+**[Download Knowlege File](<./Chatbot context/juliamccarren_knowledge_20260109_2000.md?raw=true>)**
 
 **[Download Instructions File](<./Chatbot context/juliamccarren_instructions.txt?raw=true>)**
 
