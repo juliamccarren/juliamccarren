@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia McCarren - Songübersicht</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+        th { background-color: #f4f4f4; }
+        tr:hover { background-color: #f9f9f9; }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Julia McCarren – Songübersicht (Neural Fusion Sound)</h1>
+    <p>Diese Liste enthält die Ergebnisse meines Forschungsprojekts zur KI-gestützten Musikproduktion.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name des Songs</th>
+                <th>Zusammenfassung der Geschichte</th>
+                <th>Audio-Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Antitoxic</td>
+                <td>Reaktion auf Angriffe in sozialen Medien durch Menschen, die selbst keine Kunst erschaffen; ein Song über positive Energie und Vitalität.</td>
+                <td><a href="https://drive.google.com/file/d/1BaH0F41OWi7x2gPXvJdKFYdihuLCLKFg/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Brooklyn</td>
+                <td>Künstlerische Antwort auf Angriffe von Brooklyner Elitisten.</td>
+                <td><a href="https://drive.google.com/file/d/1fqeE5EJcSA7nHtlBLbU850FZRPEtWsFi/view?usp=drivesdk" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Embers and Sparks</td>
+                <td>Inspiriert von alten Paaren, die nach Jahrzehnten noch immer intim verbunden sind; eine Reflexion über beständige Liebe.</td>
+                <td><a href="https://drive.google.com/file/d/1-_CpsCNPHMIpcJGftCFexve4LoD_zeSZ/view?usp=drivesdk" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Fences Down</td>
+                <td>Song über pure Vitalität, Freiheit und die Rebellion gegen Traditionen; ein Plädoyer für die Evolution der Musik.</td>
+                <td><a href="https://drive.google.com/file/d/1YoIzOoL_oBvmMe9C1TCYXaNrCdYBYOcw/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Frozen Heart</td>
+                <td>Eigene Version des Märchens der Schneekönigin, inspiriert durch eine Eisskulpturen-Ausstellung.</td>
+                <td><a href="https://drive.google.com/file/d/1-NMQzCKDgH3y3VmBcIcp6qBAUXKizCro/view?usp=drivesdk" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Toccata</td>
+                <td>Fusion mit Bachs Toccata in d-Moll; ein zweisprachiges Spiel mit der Bedeutung von „Berührung“.</td>
+                <td><a href="https://drive.google.com/file/d/1-eBZdp7-KiC1tvZ5OfAkaWmbJpg8_0g5/view?usp=drivesdk" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Disposable</td>
+                <td>Teil der „Good Enough“-Serie; eine ironische Nachahmung von flacher Mainstream-Musik.</td>
+                <td><a href="https://drive.google.com/file/d/1rlWYGx23KYz5ioCcJFfqzy-lM6ayonUf/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Dynamite</td>
+                <td>Über die Energie selbstbewusster Frauen, die einen Raum sofort einnehmen.</td>
+                <td><a href="https://drive.google.com/file/d/1-ke6HeTQTgJ6cnYMo0L_lJhFkD-obGuS/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Four Chords Later</td>
+                <td>Ironischer Song über die Vorhersehbarkeit und Einfachheit von Chart-Hits.</td>
+                <td><a href="https://drive.google.com/file/d/1ftltm_VBLsc0FotbpZsu_2vQH1QONs9Z/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Good Enough</td>
+                <td>Flaggschiff-Song der „Good Enough“-Serie, der ironisch flache Radiomusik imitiert.</td>
+                <td><a href="https://drive.google.com/file/d/18COou8_7SPccCZSXKP6346AE8TlU7m_3/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>I Hate You</td>
+                <td>Über Vernachlässigung in einer Beziehung; Hass als verbleibender Rest von Liebe.</td>
+                <td><a href="https://drive.google.com/file/d/1DvyCD-Uh9w3xGHhoH1nM7ES9OOSoJHBA/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Just a Vibe</td>
+                <td>Teil der „Good Enough“-Serie über neutrale Eindrücke und flache Atmosphäre.</td>
+                <td><a href="https://drive.google.com/file/d/15ROtFSq_mE4jMHJWi3azox8-jb_gbwEj/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Tabby Gonzalez</td>
+                <td>Wie ein Mädchen mit psychischen Problemen ihre Katze ruft.</td>
+                <td><a href="https://drive.google.com/file/d/16feZW_QE_Dhu8l9t-QyMVvKAyQxBHCIz/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>The Hook</td>
+                <td>Ironischer Song über die künstliche Konstruktion von Ohrwürmern.</td>
+                <td><a href="https://drive.google.com/file/d/1_osYCPF8eUGFaGFqRKRbqypiViP8-jOu/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>This is Fine</td>
+                <td>Ironisches Stück über die exakte zeitliche Planung von Streaming-Songs.</td>
+                <td><a href="https://drive.google.com/file/d/1O9CrejKbfvTvAjpCtiOGZRsHd9CsoBgg/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+            <tr>
+                <td>Verona</td>
+                <td>Dreisprachige Produktion über Romeo und Julia; ein musikalisches Unikat.</td>
+                <td><a href="https://drive.google.com/file/d/130hc0o5L6PajIH6UiVpkn626JCw5GbNp/view?usp=drive_link" target="_blank">Anhören</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
