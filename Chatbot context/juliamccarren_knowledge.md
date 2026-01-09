@@ -72,6 +72,64 @@ They demonstrate the consistency of the model's output in real-world environment
   
 * 🎵 **[Apple Music Official](https://music.apple.com/us/artist/julia-mccarren/1819985947)**
 
+## Whitepaper: The Digital Composer (DC)
+### A Framework for Grid-Native Music Synthesis and Symbolic Composition
+
+---
+
+### 1. Executive Summary
+Traditional Music AI models operate in the **Audio-Domain**, treating music as a continuous, unstructured waveform. This leads to "rhythmic drifting," lack of structural integrity, and zero editability for professionals. 
+
+The **Digital Composer (DC)** framework introduces a **Grid-Native Architecture**. By shifting the AI’s primary dimension to a deterministic **Bar-Beat-Tick (BBT)** system, we bridge the gap between generative intelligence and the professional workflow of a Digital Audio Workstation (DAW).
+
+---
+
+### 2. The "Measure-Lock" Architecture
+By introducing a dedicated **Bar-Dimension**, the Digital Composer reduces computational complexity and ensures absolute rhythmic precision:
+
+* **Absolute Coordinate System:** Every lyric token and musical event is assigned a fixed coordinate: `[Bar : Beat : Tick]`.
+* **Hard Attention Masking:** The Transformer’s attention mechanism is "locked" to the rhythmic grid. The AI is physically constrained by the **measure-based** skeleton.
+* **Metric Fluidity:** DC natively understands complex **Time Signatures** (e.g., 4/4, 6/8, 7/8) and can handle mid-song meter changes with mathematical accuracy.
+* **Symbolic Efficiency:** Operating on MIDI/Symbolic data reduces the data footprint by >90%, allowing the model to process entire orchestral scores in a single context window.
+
+---
+
+### 3. Training on Stems & Musical Theory
+Unlike "Blackbox" models, the Digital Composer is trained on isolated tracks (Stems) paired with symbolic ground truth:
+
+* **Neural Music Theory:** DC understands scales, chords, and counterpoint as mathematical constants within the **bars**, not just as frequency patterns.
+* **Stem-Specific Weights:** Training on clean Vocals, Drums, and Bass stems ensures the AI understands the "acoustic space" and rhythmic interplay between instruments.
+* **Deterministic Merging:** Vocals are synthesized directly into the instrumental’s grid, ensuring perfect phase-alignment.
+
+---
+
+### 4. Human Dimensions: The "Soul" Layer
+To prevent robotic outputs, DC allows artists to inject their unique "Soul" through additional high-resolution data dimensions:
+
+* **Micro-Timing Offsets:** Capturing the intentional "swing" or "groove" that lives between the grid lines (the human "feel" within the **measure**).
+* **Velocity Dynamics:** The emotional intensity and articulation of how a note or word is hit.
+* **Neural Pitch-Modulation:** High-fidelity vibrato and portamento captured as a continuous modulation layer over the MIDI notes.
+
+---
+
+### 5. Seamless Workflow Integration
+The Digital Composer is designed to be the ultimate companion to the modern DAW:
+
+1.  **Instant Sheet Music:** Immediate export of clean `MusicXML` files (Lead Sheets) for live musicians.
+2.  **Phase-Locked Stems:** Exported audio and MIDI are "Phase-Locked" to the project tempo for instant drag-and-drop.
+3.  **Collaborative Control:** The artist remains the "Director." By moving a MIDI block or changing a chord, the AI instantly regenerates the performance to fit the new musical context.
+
+---
+
+### 6. Logo Concept (Visual Identity)
+**Symbol:** A perfect, rigid 4x4 Grid (representing the **Bar-Dimension**) where the vertical lines slowly morph into a fluid, organic wave on the right side (representing the **Soul/Audio**).
+**Typography:** "Digital Composer" in a clean, sans-serif font, with the letters "D" and "C" interlocked like a musical clef and a digital circuit.
+
+---
+
+### 7. Conclusion
+The **Digital Composer** represents the evolution of Music AI. It is not a generator of static WAV files; it is a **Symbolic Co-Pilot** that speaks the language of music theory and respects the sanctity of the **bar-line**. It empowers artists to focus on the "Soul" of their work while the AI handles the structural complexity.
+
 ## ⚖️ Legal & Intellectual Property
 This repository serves as the official digital archive and research platform for Julia McCarren. 
 - **Music & Lyrics:** All audio files (linked or hosted) and lyrical content are protected by copyright. All rights reserved. 
