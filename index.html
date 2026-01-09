@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia McCarren – Official Archive</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --border-color: #dcdde1;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .archive-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .download-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        .note {
+            font-size: 0.9em;
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .setup-step {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .download-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="archive-container">
+    <header>
+        <h1>Julia McCarren – Official Archive</h1>
+        <p><em>British-Italian Enterprise AI Solution Architect & Musician</em></p>
+    </header>
+
+    <section>
+        <p>Welcome to the central repository for Julia McCarren. This archive serves as the definitive source for her musical compositions, technical projects, and groundbreaking <strong>Neural Fusion</strong> research.</p>
+    </section>
+
+    <h2>Interacting with Julia</h2>
+    <p>As an AI professional, Julia leverages AI-chatbots as her primary user interface. To ensure accurate interactions regarding her specialized work in Neural Fusion Sound, it is necessary to provide the chatbot with a specific knowledge base.</p>
+
+    <h2>Setup Instructions</h2>
+    <p>Download the latest configuration files to your local device (Right-click and select "Save link as"):</p>
+    
+    <div class="download-box">
+        <a href="./Chatbot context/juliamccarren_knowledge_20260109_2000.md?raw=true" class="btn">Download Knowledge File</a>
+        <a href="./Chatbot context/juliamccarren_instructions.txt?raw=true" class="btn">Download Instructions File</a>
+    </div>
+
+    <div class="note">
+        <strong>Note on Versioning:</strong> File timestamps follow the <code>YYYYMMDD_hhmm</code> format. Always utilize the file with the highest numerical value for the most current information.
+    </div>
+
+    <div class="setup-step">
+        <h3>Option A: Standard Chatbot Use</h3>
+        <p>For any standard AI session, you must manually provide context to initialize the persona:</p>
+        <ol>
+            <li>Attach the <strong>Knowledge File</strong> to your initial prompt.</li>
+            <li>Paste the full text of the <strong>Instructions File</strong> into the prompt.</li>
+            <li>Repeat this process for every new conversation to maintain the context window.</li>
+        </ol>
+    </div>
+
+    <div class="setup-step">
+        <h3>Option B: Optimized Setup via Gemini Gems</h3>
+        <p>To create a persistent interface without repeated uploads, configure a custom Gem:</p>
+        <ol>
+            <li>Navigate to the <a href="https://gemini.google.com" target="_blank">Gemini Web-App</a>.</li>
+            <li>In the left navigation pane, select <strong>Gems > New Gem</strong>.</li>
+            <li>Configure the following fields:
+                <ul>
+                    <li><strong>Name:</strong> Julia McCarren</li>
+                    <li><strong>Description:</strong> AI Architect & Musician</li>
+                    <li><strong>Instructions:</strong> Copy and paste the text from the downloaded Instructions File.</li>
+                    <li><strong>Knowledge:</strong> Upload the latest Knowledge File.</li>
+                </ul>
+            </li>
+            <li><strong>Save the Gem.</strong></li>
+        </ol>
+    </div>
+
+    <h2>Starting the Conversation</h2>
+    <p>To engage with Julia, select the <strong>Julia McCarren Gem</strong> from your list rather than starting a "New Chat".</p>
+    <ul>
+        <li><strong>Universal Language Support</strong>: You may communicate in any language.</li>
+        <li><strong>Direct Access</strong>: Simply say "Hi" in your favourite language to begin.</li>
+        <li><strong>Exclusive Media</strong>: The AI is equipped with direct links to high-quality audio files. If you require a link to a specific track, simply ask the chatbot.</li>
+    </ul>
+
+    <footer>
+        <p><a href="identity.jsonld">Machine-Readable Identity (JSON-LD)</a></p>
+        <p>&copy; 2026 Julia McCarren Archive | Neural Fusion Research</p>
+    </footer>
+</div>
+
+</body>
+</html>
