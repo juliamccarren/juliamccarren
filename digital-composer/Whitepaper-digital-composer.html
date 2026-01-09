@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitepaper: The Digital Composer (DC)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #16a085;
+            border-left: 4px solid #16a085;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            font-style: italic;
+            border: 1px solid #d1e9f0;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 30px 0;
+        }
+        code {
+            background: #f8f8f8;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>The Digital Composer (DC)</h1>
+    <p style="text-align: center; font-weight: bold;">A Framework for Grid-Native Music Synthesis and Symbolic Composition</p>
+
+    <hr>
+
+    <h2>1. Executive Summary</h2>
+    <p>Traditional Music AI models operate in the <strong>Audio-Domain</strong>, treating music as a continuous, unstructured waveform. This leads to "rhythmic drifting," lack of structural integrity, and zero editability for professionals.</p>
+    <p>The <strong>Digital Composer (DC)</strong> framework introduces a <strong>Grid-Native Architecture</strong>. By shifting the AI’s primary dimension to a deterministic <strong>Bar-Beat-Tick (BBT)</strong> system, we bridge the gap between generative intelligence and the professional workflow of a Digital Audio Workstation (DAW).</p>
+
+    <h2>2. The "Measure-Lock" Architecture</h2>
+    <p>By introducing a dedicated <strong>Bar-Dimension</strong>, the Digital Composer reduces computational complexity and ensures absolute rhythmic precision:</p>
+    <ul>
+        <li><strong>Absolute Coordinate System:</strong> Every lyric token and musical event is assigned a fixed coordinate: <code>[Bar : Beat : Tick]</code>.</li>
+        <li><strong>Hard Attention Masking:</strong> The Transformer’s attention mechanism is "locked" to the rhythmic grid. The AI is physically constrained by the <strong>measure-based</strong> skeleton.</li>
+        <li><strong>Metric Fluidity:</strong> DC natively understands complex <strong>Time Signatures</strong> (e.g., 4/4, 6/8, 7/8) and can handle mid-song meter changes with mathematical accuracy.</li>
+        <li><strong>Symbolic Efficiency:</strong> Operating on MIDI/Symbolic data reduces the data footprint by over 90%, allowing the model to process entire orchestral scores in a single context window.</li>
+    </ul>
+
+    <h2>3. Training on Stems & Musical Theory</h2>
+    <p>Unlike "Blackbox" models, the Digital Composer is trained on isolated tracks (Stems) paired with symbolic ground truth:</p>
+    <ul>
+        <li><strong>Neural Music Theory:</strong> DC understands scales, chords, and counterpoint as mathematical constants within the <strong>bars</strong>, not just as frequency patterns.</li>
+        <li><strong>Stem-Specific Weights:</strong> Training on clean Vocals, Drums, and Bass stems ensures the AI understands the "acoustic space" and rhythmic interplay between instruments.</li>
+        <li><strong>Deterministic Merging:</strong> Vocals are synthesized directly into the instrumental’s grid, ensuring perfect phase-alignment.</li>
+    </ul>
+
+    <h2>4. Human Dimensions: The "Soul" Layer</h2>
+    <p>To prevent robotic outputs, DC allows artists to inject their unique "Soul" through additional high-resolution data dimensions:</p>
+    <ul>
+        <li><strong>Micro-Timing Offsets:</strong> Capturing the intentional "swing" or "groove" that lives between the grid lines (the human "feel" within the <strong>measure</strong>).</li>
+        <li><strong>Velocity Dynamics:</strong> The emotional intensity and articulation of how a note or word is hit.</li>
+        <li><strong>Neural Pitch-Modulation:</strong> High-fidelity vibrato and portamento captured as a continuous modulation layer over the MIDI notes.</li>
+    </ul>
+
+    <h2>5. Seamless Workflow Integration</h2>
+    <p>The Digital Composer is designed to be the ultimate companion to the modern DAW:</p>
+    <ol>
+        <li><strong>Instant Sheet Music:</strong> Immediate export of clean <code>MusicXML</code> files (Lead Sheets) for live musicians.</li>
+        <li><strong>Phase-Locked Stems:</strong> Exported audio and MIDI are "Phase-Locked" to the project tempo for instant drag-and-drop into any DAW.</li>
+        <li><strong>Collaborative Control:</strong> The artist remains the "Director." By moving a MIDI block or changing a chord, the AI instantly regenerates the performance to fit the new musical context.</li>
+    </ol>
+
+    <div class="highlight">
+        "The Digital Composer represents the evolution of Music AI. It is not a generator of static WAV files; it is a Symbolic Co-Pilot that speaks the language of music theory and respects the sanctity of the bar-line."
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Digital Composer Framework | Grid-Native Music AI Vision
+    </div>
+</div>
+
+</body>
+</html>
