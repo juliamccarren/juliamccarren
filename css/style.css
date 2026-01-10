@@ -1,0 +1,194 @@
+/* --- 1. Variables & Base Setup --- */
+:root {
+    --primary-color: #2c3e50;    /* Dark Navy - Professional */
+    --accent-color: #3498db;     /* Bright Blue - Interaction */
+    --secondary-color: #16a085;  /* Teal - Specialized Elements */
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --border-color: #dcdde1;
+    --success-color: #2ecc71;
+    --shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- 2. Structural Containers --- */
+/* Works for .archive-container (P1), .container (P3), and a new wrapper for P2 */
+.main-container, .archive-container, .container {
+    max-width: 950px;
+    margin: 40px auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+/* --- 3. Typography --- */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-top: 35px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+.intro {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --- 4. Buttons & Links --- */
+.btn, .link-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+.btn:hover, .link-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Specific button for 'Listen' in the table */
+.link-btn {
+    background-color: var(--success-color);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* --- 5. Grid & Layout Components --- */
+.download-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* --- 6. Data Tables (Song Archive) --- */
+.table-wrapper {
+    overflow-x: auto; /* Ensures mobile scrollability */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background: white;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+tr:hover {
+    background-color: #f9fbfd;
+}
+
+/* --- 7. Specialized Content Blocks --- */
+.highlight {
+    background: #e8f4f8;
+    padding: 25px;
+    border-radius: 8px;
+    font-style: italic;
+    border: 1px solid #d1e9f0;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.note, .setup-step {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ffc107; /* Warning yellow for notes */
+}
+
+.setup-step {
+    border-left: 4px solid var(--accent-color);
+}
+
+code {
+    background: #f1f2f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+}
+
+/* --- 8. Footer --- */
+footer, .footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #95a5a6;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* --- 9. Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .download-box {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-container, .archive-container, .container {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    h1 { font-size: 1.8rem; }
+}
+
