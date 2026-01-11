@@ -61,6 +61,12 @@ h3 {
     font-size: 1.3rem;
 }
 
+hr {
+  border: 0;
+  border-top: 2px solid #555; /* Hier kannst du die Dicke und Farbe anpassen */
+  margin: 20px 0;             /* Gibt dem Trenner oben und unten Platz */
+}
+
 .intro {
     font-style: italic;
     color: #666;
