@@ -33,7 +33,7 @@ body {
 /* Works for .archive-container (P1), .container (P3), and a new wrapper for P2 */
 .main-container, .archive-container, .container {
     max-width: 950px;
-    margin: 40px auto;
+    margin: 20px auto;
     background: var(--card-bg);
     padding: 40px;
     border-radius: 12px;
