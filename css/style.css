@@ -1,14 +1,19 @@
 /* --- 1. Variables & Base Setup --- */
 :root {
-    --primary-color: #2c3e50;    /* Dark Navy - Professional */
+    --primary-color: #597fa4;
+    --primary-color-2: #56799d;    /* Dark Navy - Professional */
     --accent-color: #3498db;     /* Bright Blue - Interaction */
-    --secondary-color: #16a085;  /* Teal - Specialized Elements */
-    --bg-color: #f4f7f6;
-    --card-bg: #ffffff;
-    --text-color: #333;
-    --border-color: #dcdde1;
+    --secondary-color: #3a526a;  /* Teal - Specialized Elements */
+    --bg-color-2: #f4f7f6;
+    --card-bg-2: #ffffff;
+    --bg-color: #000000;
+    --card-bg: #000000;  
+    --text-color: #cccccc;  
+    --text-color-2: #333;
+    --border-color-2: #dcdde1;
+    --border-color: #484848;
     --success-color: #c5a059;
-    --shadow: 0 4px 15px rgba(0,0,0,0.08);
+    --shadow: 0 4px 15px rgba(228, 228, 228, 0.563);
 }
 
 body {
@@ -70,7 +75,7 @@ hr {
 
 .intro {
     font-style: italic;
-    color: #666;
+    color: var(--text-color);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -80,7 +85,7 @@ hr {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--primary-color);
-    color: white !important;
+    color: #cccccc !important;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
@@ -97,7 +102,7 @@ hr {
 
 /* Specific button for 'Listen' in the table */
 .link-btn {
-    background-color: var(--success-color);
+    background-color: #727f80;
     padding: 8px 16px;
     font-size: 0.9rem;
 }
@@ -126,12 +131,13 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
-    background: white;
+    background-2: white;
+    background: var(--secondary-color)
 }
 
 th {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #333;
+    color: var(--text-color);
     padding: 15px;
     text-align: left;
     text-transform: uppercase;
@@ -141,17 +147,18 @@ th {
 
 td {
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #27223f;
     font-size: 0.95rem;
 }
 
 tr:hover {
-    background-color: #f9fbfd;
+    background-color-2: #f9fbfd;
+    background-color: #212742;
 }
 
 /* --- 7. Specialized Content Blocks --- */
 .highlight {
-    background: #e8f4f8;
+    background: #2c2c3e;
     padding: 25px;
     border-radius: 8px;
     font-style: italic;
@@ -161,7 +168,8 @@ tr:hover {
 }
 
 .note, .setup-step {
-    background: #fdfdfd;
+    background-2: #fdfdfd;
+    background: #000000;
     border: 1px solid #eee;
     padding: 20px;
     border-radius: 8px;
@@ -174,7 +182,8 @@ tr:hover {
 }
 
 code {
-    background: #f1f2f6;
+    background-2: #f1f2f6;
+    background: #666666;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Consolas', 'Monaco', monospace;
