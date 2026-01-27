@@ -224,4 +224,25 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>   
+
+    <url>
+        <loc>https://juliamccarren.github.io/juliamccarren/songs/Left_Lane_Legend.html</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>   
+
+    <url>
+        <loc>https://juliamccarren.github.io/juliamccarren/songs/Betrayal.html</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url> 
+
+    <url>
+        <loc>https://juliamccarren.github.io/juliamccarren/songs/Jet_Set.html</loc>
+        <lastmod>2026-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>            
 </urlset>
