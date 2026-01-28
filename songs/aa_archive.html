@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia McCarren – Neural Fusion Archive</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React & ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel for JSX support in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Custom scrollbar simulation for the lyrics box */
+        .lyrics-scroll::-webkit-scrollbar { width: 6px; }
+        .lyrics-scroll::-webkit-scrollbar-track { background: transparent; }
+        .lyrics-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 12s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#020617]">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useMemo, useEffect } = React;
+
+        // Inline SVG Icons to prevent dependency errors
+        const IconSearch = () => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        );
+        const IconMusic = () => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        );
+        const IconInfo = () => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        );
+        const IconChevronRight = ({ className }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m9 18 6-6-6-6"/></svg>
+        );
+        const IconDisc = ({ className }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        );
+        const IconLanguages = () => (
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+        );
+
+        const SONGS = [
+            { id: 'antitoxic', title: 'Antitoxic', background: 'A response to social media attacks from those who create nothing; a song about vital energy and positive frequency.', tags: ['Response', 'Energy'], lyrics: "[Verse 1]\nStatic noise from empty souls\nTrying to take their heavy tolls\nBut I'm a frequency they can't reach\nMore than just the words they preach..." },
+            { id: 'avalanche', title: 'Avalanche', background: 'A strong relationship where you are deeply involved in emotionally often has the force of an avalanche', tags: ['Intense'], lyrics: "[Chorus]\nIt's an avalanche of feeling\nBringing down the ceiling\nHeavy as the mountain snow\nNowhere left for us to go..." },
+            { id: 'betrayal', title: 'Betrayal', background: "When your friend cheats on you it's a painful experience. Try to take it at easy as possible.", tags: ['Emotional'], lyrics: "[Verse 1]\nTrust is a glass house\nOne stone is all it takes\nNow I'm picking up the pieces\nOf the promises you break..." },
+            { id: 'brooklyn', title: 'Brooklyn', background: 'An artistic answer to attacks from Brooklyn elitists.', tags: ['Response', 'Social'], lyrics: "[Verse 1]\nBrownstone judgements in the dark\nTrying to extinguish every spark\nYou measure art by the postal code\nWhile I'm out here on the open road..." },
+            { id: 'disposable', title: 'Disposable', background: 'From the "Good Enough" series; an ironic take on flat mainstream music with low-effort melodies.', tags: ['Good Enough', 'Satire'], lyrics: "[Chorus]\nIt's disposable, it's fine\nCross the bottom of the line\nSing the hook and walk away\nYou'll forget it by today..." },
+            { id: 'dynamite', title: 'Dynamite', background: 'Capturing the energy and self-consciousness of women who attract attention the moment they enter a room.', tags: ['Pop', 'Energy'], lyrics: "[Verse 1]\nThe air changes when she walks in\nVoltage burning on her skin\nA fuse is lit, a ticking sound\nBefore she levels all the ground..." },
+            { id: 'embers_and_sparks', title: 'Embers and Sparks', background: 'Reflecting on old couples who still hold hands; a meditation on whether love can last 50 years.', tags: ['Ballad', 'Time'], lyrics: "[Verse 1]\nHalf a century in a glance\nStill caught in the same old dance\nThe fire's low, the night is deep\nBut promises are ours to keep..." },
+            { id: 'fences_down', title: 'Fences Down', background: 'A plea for the evolution of music and a rebellion against ancestors, celebrating pure vitality and freedom.', tags: ['Evolution', 'Freedom'], lyrics: "[Verse 1]\nTear the wire from the post\nLeave the shadows of the ghost\nThe past is just a heavy chain\nLet the music breathe again..." },
+            { id: 'four_chords_later', title: 'Four Chords Later', background: 'Part of the "Good Enough" series, mocking the predictable formulas used to maximize streams.', tags: ['Good Enough', 'Formula'], lyrics: "[Verse 1]\nI-V-vi-IV, you know the way\nEverything you want to say\nCalculated to the beat\nFormulaically complete..." },
+            { id: 'frozen_heart', title: 'Frozen Heart', background: 'A version of Hans Christian Andersen’s Snow Queen, inspired by the chilling beauty of an ice carving exhibition.', tags: ['Art', 'Classical-Fusion'], lyrics: "[Verse 1]\nCarved in crystal, cold and bright\nSculptures of the winter light\nDon't let the splinter reach your eye\nOr every summer dream will die..." },
+            { id: 'garage_band', title: 'Garage Band', background: 'I played the synth. Our bassist was the pastor\'s daughter, so we were able to rehearse in the church rooms.', tags: ['Nostalgia', 'Synth'], lyrics: "[Verse 1]\nDusty keys and holy halls\nReverb off the chapel walls\nSynth waves in the sacred air\nFinding heaven everywhere..." },
+            { id: 'good_enough', title: 'Good Enough', background: 'The flagship song of the "Good Enough" series, mimicking the flat, standard vibe of modern radio trash.', tags: ['Good Enough', 'Pop'], lyrics: "[Verse 1]\nPerfectly average, nicely bland\nLike the static in the land\nNot too high and not too low\nJust enough to make it go..." },
+            { id: 'heart_of_fire_and_ice', title: 'Heart of Fire and Ice', background: 'A hommage to the Nordic landscape and its duality of warmth and cold.', tags: ['Nordic', 'Folk'], lyrics: "[Verse 1]\nGlaciers burning in the sun\nWhere the frozen rivers run\nFire beneath the winter crust\nA heart of ice, a heart of trust..." },
+            { id: 'i_hate_you', title: 'I Hate You', background: 'Explores the neglect in relationships; a reminder that the opposite of love is not hate, but indifference.', tags: ['Relationship'], lyrics: "[Chorus]\nI'd rather you hate me than feel nothing at all\nIndifference is a higher wall\nSpeak a word, even a lie\nAnything but this cold goodbye..." },
+            { id: 'jet_set', title: 'Jet Set', background: 'What nobody talks about: You are lonely in your car, in the plane and in your hotel room.', tags: ['Atmospheric', 'Solo'], lyrics: "[Verse 1]\nSilver wings across the night\nNeon cities passing by\nBut the silence in the room\nIs the only thing that's high...\n\n[Chorus]\nJet set, lonely in the sky\nJet set, watching time go by\nAnother hotel, another key\nBut no one's waiting here for me." },
+            { id: 'just_a_vibe', title: 'Just a Vibe', background: 'An ironic "Good Enough" series track about perfectly neutral, non-specific impressions and atmospheres.', tags: ['Good Enough', 'Ambient'], lyrics: "[Verse 1]\nNo direction, no intent\nJust a moment, quickly spent\nA neutral mood, a gray-scale hue\nNothing old and nothing new..." },
+            { id: 'left_lane_legend', title: 'Left Lane Legend', background: 'Going 200km/h with your business sedan on the Autobahn is a nice experience.', tags: ['High Energy'], lyrics: "[Verse 1]\nTwo hundred on the digital dash\nBlurred lines as the worlds collide\nLeft lane is the only path\nWhere the ghosts of the city hide..." },
+            { id: 'need_for_speed', title: 'Need for Speed', background: 'The speed is even more impressive if it\'s not the result from Cooper Works but based on own performance.', tags: ['Performance'], lyrics: "[Verse 1]\nNo racing stripes, no chrome veneer\nJust the engine screaming in my ear\nBuilt from scratch, built to lead\nThis is my own kind of speed..." },
+            { id: 'one_in_a_quarter_billion', title: 'One in a Quarter Billion', background: 'It is such a vast ocean of music. I am glad that you are here.', tags: ['Philosophy'], lyrics: "[Verse 1]\nDigital waves in a static sea\nA quarter billion frequencies\nBut somehow you tuned into me\nIn this void of infinity..." },
+            { id: 'rocker_songwriter', title: 'Rocker Songwriter', background: 'The transformation from a quiet singer-songwriter to a powerful rock artist.', tags: ['Rock', 'Identity'], lyrics: "[Verse 1]\nAcoustic strings and bated breath\nI was bored to sudden death\nPlug it in and turn the gain\nLet the electricity explain..." },
+            { id: 'schools_out', title: 'School\'s Out', background: 'The joy of leaving school and the freedom of a new beginning. Challenging instrumentals and vocals.', tags: ['Energy', 'Vocals'], lyrics: "[Verse 1]\nFinal bell is ringing out\nEchoing the silent shout\nThe books are closed, the doors are wide\nI'm stepping to the other side..." },
+            { id: 'siblings', title: 'Siblings', background: 'I love her from my heart.', tags: ['Personal'], lyrics: "[Verse 1]\nSame blood, different dreams\nStitched together at the seams\nA bond that time can never fray\nI'll be there, come what may..." },
+            { id: 'slippery_road', title: 'Slippery Road', background: 'The painful dissolution of a relationship through the metaphor of a car losing control on a frozen road', tags: ['Metaphor', 'Cold'], lyrics: "[Verse 1]\nBlack ice underneath the wheels\nFrozen like the way it feels\nI'm steering into the slide\nBut there's nowhere left to hide..." },
+            { id: 'tabby_gonzalez', title: 'Tabby Gonzalez', background: 'The story of how a girl with mental health challenges calls her cat.', tags: ['Story', 'Mental Health'], lyrics: "[Verse 1]\nSoft paws on the wooden floor\nWaiting by the bedroom door\nA name spoken in a fragile tone\nThe only friend I've ever known..." },
+            { id: 'the_hook', title: 'The Hook', background: 'From the "Good Enough" series; a song designed to stick using manufactured climax and simple melodies.', tags: ['Good Enough', 'Hooks'], lyrics: "[Chorus]\nThis is the hook that gets you in\nBefore the story can begin\nThree notes repeating in your head\nUntil the rest of it is dead..." },
+            { id: 'this_is_fine', title: 'This is Fine', background: 'A song exploring the exact prompting of a timeline, hitting three minutes for streaming metrics.', tags: ['Experiment', 'Metrics'], lyrics: "[Verse 1]\nTiming the pulse of the digital heart\nScience posing as a work of art\nOne-eight-zero seconds to the end\nExactly what the graphs recommend..." },
+            { id: 'toccata', title: 'Toccata', background: 'A bilingual fusion featuring my performance of Bach’s Toccata in D minor, exploring the meaning of the Italian word "toccare" (to touch).', tags: ['Bach', 'Bilingual'], lyrics: "[Verse 1]\nToccare... to reach, to feel\nWhere the digital becomes the real\nBach's ghost in the circuit board\nEvery touch, a new-found chord..." },
+            { id: 'verona', title: 'Verona', background: 'A "singularity" track: a tragic love story sung by two vocalists in three languages simultaneously.', tags: ['Multilingual', 'Opera-Pop'], lyrics: "[Multi-language bridge]\nL'amore è un'illusione (Love is an illusion)\nDie Zeit bleibt niemals stehen (Time never stands still)\nIn the shadow of the balcony\nWe are only what we choose to be..." },
+            { id: 'whiteout', title: 'Whiteout', background: 'Trapped in a literal and emotional whiteout, the loss of intimacy and the warmth of the past as the relationship succumbs to a freezing, silent isolation.', tags: ['Ambient', 'Cold'], lyrics: "[Verse 1]\nCan't see the hand before my face\nIn this static, empty space\nYou were once my northern star\nNow I don't know where you are..." },
+            { id: 'winterstorm', title: 'Winterstorm', background: 'Against the backdrop of a literal winter storm, a couple whose relationship has become emotionally frozen', tags: ['Atmospheric', 'Relationship'], lyrics: "[Chorus]\nWinterstorm inside these walls\nSnow is drifting through the halls\nWe're huddling for a ghost of heat\nWhile the ice becomes complete..." },
+        ];
+
+        const SongCard = ({ song, onClick }) => (
+            <div 
+                onClick={onClick}
+                className="group relative bg-slate-900/40 backdrop-blur-md border border-slate-700/50 p-6 rounded-2xl cursor-pointer hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] flex flex-col h-full shadow-lg"
+            >
+                <div className="flex justify-between items-start mb-4">
+                    <div className="p-3 bg-cyan-500/10 rounded-xl group-hover:bg-cyan-500/20 transition-colors">
+                        <IconDisc className="w-6 h-6 text-cyan-400 animate-pulse" />
+                    </div>
+                    <div className="flex gap-2">
+                        {song.tags.slice(0, 1).map(tag => (
+                            <span key={tag} className="text-[10px] uppercase tracking-wider font-bold bg-slate-800 text-slate-400 px-2 py-1 rounded">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">{song.title}</h3>
+                <p className="text-slate-400 text-sm line-clamp-3 leading-relaxed">{song.background}</p>
+            </div>
+        );
+
+        const DetailView = ({ song, onBack }) => {
+            useEffect(() => { window.scrollTo(0, 0); }, []);
+            return (
+                <div className="max-w-4xl mx-auto p-4 md:p-8">
+                    <button onClick={onBack} className="flex items-center text-slate-400 hover:text-white mb-8 transition-colors group">
+                        <IconChevronRight className="w-5 h-5 rotate-180 mr-2" />
+                        Back to Archive
+                    </button>
+                    <div className="bg-slate-900/60 backdrop-blur-xl border border-slate-700/50 rounded-3xl overflow-hidden shadow-2xl">
+                        <div className="h-48 bg-gradient-to-r from-cyan-600/20 via-purple-600/20 to-blue-600/20 flex items-center justify-center border-b border-slate-700/50">
+                            <IconDisc className="w-24 h-24 text-cyan-400/30 animate-spin-slow" />
+                        </div>
+                        <div className="p-8">
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {song.tags.map(tag => (
+                                    <span key={tag} className="text-xs font-bold px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full">{tag}</span>
+                                ))}
+                            </div>
+                            <h1 className="text-4xl md:text-5xl font-black text-white mb-6">{song.title}</h1>
+                            <div className="space-y-8">
+                                <section>
+                                    <h2 className="flex items-center text-xl font-semibold text-slate-200 mb-4">
+                                        <IconInfo />
+                                        <span className="ml-2">Background</span>
+                                    </h2>
+                                    <div className="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50 text-slate-300 italic">"{song.background}"</div>
+                                </section>
+                                <section>
+                                    <h2 className="flex items-center text-xl font-semibold text-slate-200 mb-4">
+                                        <IconLanguages />
+                                        <span className="ml-2">Lyrics</span>
+                                    </h2>
+                                    <div className="p-6 md:p-8 bg-slate-950/50 rounded-2xl border border-slate-800/50 text-slate-400 leading-relaxed font-mono whitespace-pre-wrap max-h-[400px] overflow-y-auto lyrics-scroll">
+                                        {song.lyrics || "Loading lyrics..."}
+                                    </div>
+                                </section>
+                                <div className="pt-6 border-t border-slate-700/50">
+                                    <a href="#" className="flex items-center justify-center w-full px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-2xl shadow-lg transition-all transform hover:scale-[1.01]">
+                                        <IconMusic />
+                                        <span className="ml-2">Listen on Google Drive</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        function App() {
+            const [view, setView] = useState('archive');
+            const [selectedSong, setSelectedSong] = useState(null);
+            const [searchTerm, setSearchTerm] = useState('');
+            const [activeFilter, setActiveFilter] = useState('All');
+
+            const filteredSongs = useMemo(() => {
+                return SONGS.filter(song => {
+                    const matchesSearch = song.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                                         song.background.toLowerCase().includes(searchTerm.toLowerCase());
+                    const matchesFilter = activeFilter === 'All' || song.tags.includes(activeFilter);
+                    return matchesSearch && matchesFilter;
+                });
+            }, [searchTerm, activeFilter]);
+
+            const filters = ['All', 'Good Enough', 'Cold', 'Personal', 'Energy', 'Relationship'];
+
+            return (
+                <div className="min-h-screen text-slate-100 selection:bg-cyan-500/30">
+                    <div className="fixed inset-0 overflow-hidden pointer-events-none">
+                        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-cyan-500/10 blur-[120px] rounded-full opacity-50" />
+                        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-purple-500/10 blur-[120px] rounded-full opacity-30" />
+                    </div>
+
+                    {view === 'archive' ? (
+                        <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-20">
+                            <header className="mb-16 text-center max-w-3xl mx-auto">
+                                <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold tracking-widest uppercase">
+                                    Julia McCarren Research Project
+                                </div>
+                                <h1 className="text-5xl md:text-7xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-br from-white to-slate-500">
+                                    Neural Fusion Archive
+                                </h1>
+                                <p className="text-slate-400 text-lg leading-relaxed">
+                                    Exploring the sophisticated boundaries of human-AI collaboration in music production (2026).
+                                </p>
+                            </header>
+
+                            <div className="mb-12 space-y-6">
+                                <div className="relative max-w-2xl mx-auto">
+                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+                                        <IconSearch />
+                                    </div>
+                                    <input 
+                                        type="text" 
+                                        placeholder="Search archive..." 
+                                        value={searchTerm}
+                                        onChange={(e) => setSearchTerm(e.target.value)}
+                                        className="w-full bg-slate-900/50 border border-slate-700/50 rounded-2xl py-4 pl-12 pr-6 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all backdrop-blur-sm"
+                                    />
+                                </div>
+                                <div className="flex flex-wrap justify-center gap-2">
+                                    {filters.map(f => (
+                                        <button 
+                                            key={f} 
+                                            onClick={() => setActiveFilter(f)} 
+                                            className={`px-5 py-2 rounded-xl text-sm font-bold transition-all ${activeFilter === f ? 'bg-white text-slate-900 shadow-lg' : 'bg-slate-900/40 text-slate-400 border border-slate-700/50 hover:bg-slate-800'}`}
+                                        >
+                                            {f}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {filteredSongs.map(s => <SongCard key={s.id} song={s} onClick={() => { setSelectedSong(s); setView('detail'); }} />)}
+                            </div>
+                            
+                            <footer className="mt-20 pt-10 border-t border-slate-800/50 text-center text-slate-500 text-sm">
+                                &copy; 2026 Julia McCarren &bull; Neural Fusion Music Collective
+                            </footer>
+                        </div>
+                    ) : (
+                        <DetailView song={selectedSong} onBack={() => setView('archive')} />
+                    )}
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
