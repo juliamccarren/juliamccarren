@@ -94,6 +94,19 @@ hr {
     border: none;
 }
 
+.listen-btn {
+    display: inline-block;
+    padding: 12px 60px;
+    background-color: var(--primary-color);
+    color: #cccccc !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
 .btn:hover, .link-btn:hover {
     background-color: var(--accent-color);
     transform: translateY(-2px);
