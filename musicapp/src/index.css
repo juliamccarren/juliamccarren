@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Hier drunter kommt dein restlicher Julia-Archive-Code */
+body { 
+  @apply bg-[#020617] text-slate-100;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+}
+
+/* Custom scrollbar simulation for the lyrics box */
+.lyrics-scroll::-webkit-scrollbar { width: 6px; }
+.lyrics-scroll::-webkit-scrollbar-track { background: transparent; }
+.lyrics-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 12s linear infinite;
+}
