@@ -85,56 +85,7 @@
 </div>
 
 <script>
-    window.onload = () => document.getElementById('pin').focus();
-
-    // The SHA-256 fingerprint + "_RocknRoll_Security_2026"
-    const _P = "c01e232c843fdee386678ae693f7a2163d04a6c204eb252c009635970e121a34"; 
-
-    // Your GUID file inside the /songs/ folder (Base64)
-    const _T = "Li9zb25ncy9mNDdhYzEwYi01OGNjLTQzNzItYTU2Ny0wZTAyYjJjM2Q0NzkuaHRtbA==";
-
-    // Your secret salt (NEVER change this, or the hash above won't work anymore)
-    const _S = "_RocknRoll_Security_2026";
-
-    async function hash(s) {
-        const utf8 = new TextEncoder().encode(s + _S);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
-        return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-
-    async function unlock() {
-        const btn = document.querySelector('button');
-        const status = document.getElementById('status');
-        const input = document.getElementById('pin').value;
-
-        btn.disabled = true;
-        status.innerText = "CHECKING...";
-        status.style.color = "#888";
-
-        // Throttling delay against bots
-        await new Promise(r => setTimeout(r, 600));
-
-        const h = await hash(input);
-
-        if (h === _P) {
-            status.innerText = "ACCESS_GRANTED";
-            status.style.color = "#00ff00";
-            
-            const destination = atob(_T);
-            setTimeout(() => {
-                window.location.href = destination; 
-            }, 500);
-        } else {
-            status.innerText = "INVALID_CREDENTIALS";
-            status.style.color = "#ff4444";
-            document.getElementById('pin').value = "";
-            setTimeout(() => { btn.disabled = false; status.innerText = ""; }, 2000);
-        }
-    }
-
-    document.getElementById('pin').addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') unlock();
-    });
+const _0x3fdf2a=_0xee68;(function(_0x52fde3,_0x1c1528){const _0x50680=_0xee68,_0x2b1c26=_0x52fde3();while(!![]){try{const _0x52f93e=-parseInt(_0x50680(0x15c))/0x1+-parseInt(_0x50680(0x16c))/0x2+parseInt(_0x50680(0x163))/0x3*(-parseInt(_0x50680(0x15b))/0x4)+parseInt(_0x50680(0x15e))/0x5+parseInt(_0x50680(0x15a))/0x6*(parseInt(_0x50680(0x164))/0x7)+parseInt(_0x50680(0x151))/0x8+parseInt(_0x50680(0x161))/0x9*(parseInt(_0x50680(0x148))/0xa);if(_0x52f93e===_0x1c1528)break;else _0x2b1c26['push'](_0x2b1c26['shift']());}catch(_0x398225){_0x2b1c26['push'](_0x2b1c26['shift']());}}}(_0x410f,0xa45d4),window[_0x3fdf2a(0x169)]=()=>document['getElementById']('pin')[_0x3fdf2a(0x157)]());function _0xee68(_0x63794,_0x606bee){_0x63794=_0x63794-0x148;const _0x410f55=_0x410f();let _0xee6818=_0x410f55[_0x63794];return _0xee6818;}function _0x410f(){const _0x25f0b3=['#ff4444','3855849UHXGdE','392CXUdCf','#888','keypress','disabled','_RocknRoll_Security_2026','onload','#00ff00','querySelector','307678HyaXBa','Enter','key','80JztRiI','style','href','innerText','value','ACCESS_GRANTED','join','digest','status','1193440qReaNw','pin','color','CHECKING...','subtle','from','focus','location','INVALID_CREDENTIALS','92274bQvJXx','4SfQoRg','22132FvLJRM','getElementById','608710gigwHO','addEventListener','button','1127637CkDTSc'];_0x410f=function(){return _0x25f0b3;};return _0x410f();}const _P='c01e232c843fdee386678ae693f7a2163d04a6c204eb252c009635970e121a34',_T='Li9zb25ncy9mNDdhYzEwYi01OGNjLTQzNzItYTU2Ny0wZTAyYjJjM2Q0NzkuaHRtbA==',_S=_0x3fdf2a(0x168);async function hash(_0x543f24){const _0x226b8b=_0x3fdf2a,_0x58eb75=new TextEncoder()['encode'](_0x543f24+_S),_0x153927=await crypto[_0x226b8b(0x155)][_0x226b8b(0x14f)]('SHA-256',_0x58eb75);return Array[_0x226b8b(0x156)](new Uint8Array(_0x153927))['map'](_0x28fdde=>_0x28fdde['toString'](0x10)['padStart'](0x2,'0'))[_0x226b8b(0x14e)]('');}async function unlock(){const _0xc46e18=_0x3fdf2a,_0x25f168=document[_0xc46e18(0x16b)](_0xc46e18(0x160)),_0x3675da=document[_0xc46e18(0x15d)](_0xc46e18(0x150)),_0x549918=document['getElementById'](_0xc46e18(0x152))[_0xc46e18(0x14c)];_0x25f168[_0xc46e18(0x167)]=!![],_0x3675da['innerText']=_0xc46e18(0x154),_0x3675da['style'][_0xc46e18(0x153)]=_0xc46e18(0x165),await new Promise(_0x162cac=>setTimeout(_0x162cac,0x258));const _0x3b670b=await hash(_0x549918);if(_0x3b670b===_P){_0x3675da[_0xc46e18(0x14b)]=_0xc46e18(0x14d),_0x3675da[_0xc46e18(0x149)]['color']=_0xc46e18(0x16a);const _0x3f60d6=atob(_T);setTimeout(()=>{const _0x5394c2=_0xc46e18;window[_0x5394c2(0x158)][_0x5394c2(0x14a)]=_0x3f60d6;},0x1f4);}else _0x3675da['innerText']=_0xc46e18(0x159),_0x3675da[_0xc46e18(0x149)][_0xc46e18(0x153)]=_0xc46e18(0x162),document[_0xc46e18(0x15d)]('pin')[_0xc46e18(0x14c)]='',setTimeout(()=>{const _0x112356=_0xc46e18;_0x25f168[_0x112356(0x167)]=![],_0x3675da['innerText']='';},0x7d0);}document[_0x3fdf2a(0x15d)](_0x3fdf2a(0x152))[_0x3fdf2a(0x15f)](_0x3fdf2a(0x166),_0x47bf2d=>{const _0x30cbd7=_0x3fdf2a;if(_0x47bf2d[_0x30cbd7(0x16e)]===_0x30cbd7(0x16d))unlock();});
 </script>
 
 </body>
