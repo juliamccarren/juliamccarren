@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://juliamccarren.github.io/juliamccarren/sitemap.xml
+Disallow: /

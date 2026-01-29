@@ -3,54 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julia McCarren – Official Archive</title>
-    <link rel="icon" href="./images/fav_icon.jpg">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Private Research Access</title>
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <style>
+        body { 
+            background: #000000; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        
+        .login-box { 
+            width: 320px; 
+            padding: 40px; 
+            background: #000000; 
+            border: 1px solid #333; 
+            text-align: center; 
+        }
+
+        h1 { 
+            font-size: 0.9rem; 
+            color: #aaaaaa; 
+            margin-bottom: 30px; 
+            font-weight: normal; 
+            letter-spacing: 1px;
+        }
+
+        input { 
+            background: #000; 
+            border: 1px solid #444; 
+            color: #00ff00; 
+            padding: 12px; 
+            width: 100%; 
+            box-sizing: border-box; 
+            text-align: center; 
+            margin-bottom: 20px; 
+            outline: none; 
+            font-size: 1rem;
+        }
+
+        button { 
+            background: #1a1a1a; 
+            border: 1px solid #444; 
+            color: #ffffff; 
+            padding: 12px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        button:hover { 
+            background: #333333; 
+        }
+
+        button:disabled {
+            color: #555;
+            cursor: not-allowed;
+        }
+
+        #status { 
+            height: 20px; 
+            margin-top: 20px; 
+            font-size: 0.75rem; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="archive-container">
-    <header style="text-align: center;">
-        <h1>Julia McCarren – Official Archive</h1>
-        <p><em>British-Italian Enterprise AI Solution Architect & Musician</em></p>
-    </header>
-
-    <img src="./images/Julia-Banner-2.jpg" style="width: 100%; height: auto;" alt="Website Banner">
-
-    <section>
-        <p class="text-standard">Welcome to the central repository for Julia McCarren. This archive serves as the definitive source for her musical compositions, technical projects, and groundbreaking <strong>Neural Fusion</strong> research.</p>
-    </section>
-
-    <section>
-        <h2>Professional Profile</h2>
-        <p class="text-standard">At her profession in computer science she works as solution architect at enterprise level. She designs complex software architectures including the usage of AI. She created an AI agent that dynamically creates and executes code. This was her personal Skynet moment. She realised that those systems could do extreme harm to humanity especially in critical industries. She engages in installing guardrails for human control and respecting ethics in the evolution of the AI landscape.</p>
-    </section>
-
-    <section>
-        <h2>Artistic Profile</h2>
-        <p class="text-standard">At the age of 15 Julia became a certified semiprofessional church organist playing services and concerts. She sings in a choir and played the synth in her school band. Her repertoire is Bach and the virtuoso pieces of Widor and Boëllmann.</p>
-    </section>
-    
-    <div class="link-box">
-        <a href="./songs/aa_index.html" class="btn">Neural Fusion Music</a>
-        <a href="./chatbot/setup.html" class="btn">Talk to Julia</a>
-    </div>
-    
-    <div class="link-box">
-        <a href="./neural-fusion/neural-fusion.html" class="btn">Neural Fusion</a>
-        <a href="./digital-composer/Whitepaper-digital-composer.html" class="btn">Digital Composer</a>     
-    </div>
-
-    <div class="link-box">
-        <a href="https://drive.google.com/file/d/1JMyv4fpOPGgi4YZw2Bmigapu8VuaLn6R/view?usp=drive_link" class="btn">Deep Dive Podcast 1</a>
-        <a href="https://drive.google.com/file/d/1i5T0kcZMh5Bh3g9WeRRGDSPMfM1BDF77/view?usp=drive_link" class="btn">Deep Dive Podcast 2</a>
-    </div>
-    
-    <footer>
-        <p><a href="identity.jsonld">Machine-Readable Identity (JSON-LD)</a></p>
-        <p>&copy; 2026 Julia McCarren Archive | Neural Fusion Research</p>
-    </footer>
+<div class="login-box">
+    <h1>SECURE ACCESS REQUIRED</h1> 
+    <input type="password" id="pin" placeholder="PIN" maxlength="20" autocomplete="off">
+    <button onclick="unlock()">VALIDATE</button>
+    <div id="status"></div>
 </div>
+
+<script>
+    window.onload = () => document.getElementById('pin').focus();
+
+    // The SHA-256 fingerprint + "_RocknRoll_Security_2026"
+    const _P = "c01e232c843fdee386678ae693f7a2163d04a6c204eb252c009635970e121a34"; 
+
+    // Your GUID file inside the /songs/ folder (Base64)
+    const _T = "Li9zb25ncy9mNDdhYzEwYi01OGNjLTQzNzItYTU2Ny0wZTAyYjJjM2Q0NzkuaHRtbA==";
+
+    // Your secret salt (NEVER change this, or the hash above won't work anymore)
+    const _S = "_RocknRoll_Security_2026";
+
+    async function hash(s) {
+        const utf8 = new TextEncoder().encode(s + _S);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
+        return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function unlock() {
+        const btn = document.querySelector('button');
+        const status = document.getElementById('status');
+        const input = document.getElementById('pin').value;
+
+        btn.disabled = true;
+        status.innerText = "CHECKING...";
+        status.style.color = "#888";
+
+        // Throttling delay against bots
+        await new Promise(r => setTimeout(r, 600));
+
+        const h = await hash(input);
+
+        if (h === _P) {
+            status.innerText = "ACCESS_GRANTED";
+            status.style.color = "#00ff00";
+            
+            const destination = atob(_T);
+            setTimeout(() => {
+                window.location.href = destination; 
+            }, 500);
+        } else {
+            status.innerText = "INVALID_CREDENTIALS";
+            status.style.color = "#ff4444";
+            document.getElementById('pin').value = "";
+            setTimeout(() => { btn.disabled = false; status.innerText = ""; }, 2000);
+        }
+    }
+
+    document.getElementById('pin').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') unlock();
+    });
+</script>
 
 </body>
 </html>
